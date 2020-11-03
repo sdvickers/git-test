@@ -1,0 +1,34 @@
+Initialize an empty Git repository with this command:
+git init
+
+Check your Git repository status:
+git status
+
+Create a new file using Visual Studio Code
+Open VS Code in this folder by typing:
+code .
+
+Add files to the staging area
+To add files to the staging area of your Git repository, type:
+git add .
+
+To commit the current staging area to your Git repository, type:
+git commit -m "first commit"
+The -m is a switch for adding a message in ""
+
+Check the log of Git commits
+To check the log of the commits to your Git repository, type:
+git log --oneline
+
+Checking out a file from an earlier commit
+To check out index.html from the second commit, find the hashed number of the commit using git log, and then type the following at the prompt:
+git checkout <hashed number> index.html
+
+Resetting the local Git repository
+To discard the effect of the previous operation and restore index.html to its state at the end of the last commit, type:
+git reset HEAD index.html
+
+Then type the following at the prompt:
+git checkout -- index.html
+
+You can also use git reset to reset the staging area to the last commit without disturbing the working directory.
